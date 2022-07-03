@@ -4,11 +4,14 @@ A function that receives an input dictionary and returns a nested array of keys 
 
 ## Requirements ⚙️
 - Node.js
-- Typescript
 
+## Clone the repository
+```bash
+git clone https://github.com/Angel-Gabriel-Chavez/Key-Values_Splitter.git
+```
 ## Run 🏁
 ```bash
-C:\project>  node main.js
+C:\project> node main.js
 ```
 Return 
 ```bash
