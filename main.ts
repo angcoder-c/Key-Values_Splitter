@@ -7,15 +7,7 @@
  */
 
 function keysAndValue(dict): any {
-	// arrays of return
-	let keys = [];
-	let values = [];
-
-  	for (let item in dict){
-		keys.push(item);
-		values.push(dict[item]);
-	}
-	return new Array(keys, values);
+	return new Array(Object.keys(dict), Object.values(dict))
 }
 
 // Tests
