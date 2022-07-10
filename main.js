@@ -6,14 +6,7 @@
  * en el mismo orden.
  */
 function keysAndValue(dict) {
-    // arrays of return
-    var keys = [];
-    var values = [];
-    for (var item in dict) {
-        keys.push(item);
-        values.push(dict[item]);
-    }
-    return new Array(keys, values);
+    return new Array(Object.keys(dict), Object.values(dict))
 }
 // Tests
 var a = keysAndValue({ a: 1, b: 2, c: 3 });
