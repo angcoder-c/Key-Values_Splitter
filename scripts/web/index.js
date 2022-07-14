@@ -9,10 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     var objOrigin = {};
 
-    function paintFields (color) {
-        
-    }
-
     function addItem () {
         var key = keyField.value; 
         var value = valueField.value; 
@@ -20,22 +16,22 @@ document.addEventListener('DOMContentLoaded', () => {
         if (key && value){
             objOrigin[key] = value;
             source.innerText = JSON.stringify(objOrigin);
-            paintFields();
 
             keyField.value = ''; 
             valueField.value = ''; 
+
+            keyField.classList.remove('error');
+            valueField.classList.remove('error');
         } else {
-            keyField.style.backgroundColor = '#f00';
-            valueField.style.backgroundColor = '#f00';
+            keyField.classList.add('error');
+            valueField.classList.add('error');
         }
     }
 
     function show () {
         if (Object.keys(objOrigin).length > 0){
             result.innerText = JSON.stringify(keysAndValue(objOrigin));
-        } else {
-            source.style.backgroundColor = '#f00';
-        }
+        } else {}
     }
 
     function reset () {
@@ -43,6 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
         valueField.value = '';
         source.innerText = ''; 
         result.innerText = '---';
+
+        objOrigin = {};
+
+        keyField.classList.remove('error');
+        valueField.classList.remove('error');
     }
 
     resetButton.onclick = reset;

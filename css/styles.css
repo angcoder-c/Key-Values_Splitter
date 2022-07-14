@@ -1,0 +1,162 @@
+body {
+    background: #0a002a;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+}
+
+.container {
+    background: transparent;
+    margin: auto;
+    width: 30%;
+}
+
+.view-object {
+    display: grid;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#source, #show {
+    padding: 0;
+    border: 0;
+    resize: none;
+}
+
+#show {
+    background-color: #dfa30e;
+    padding: 3%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: .5s;
+    box-shadow: 0px 0px 10px #dfa30e;
+}
+
+#source {
+    background-color: #202356;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 3%;
+    outline: none;
+    color: #fff;
+    box-shadow: 0px 0px 10px #35386c;
+}
+
+.add-obj {
+    display: flex;
+    margin: 6% 0;
+    width: 100%;
+}
+
+#key, #value {
+    width: 100%;
+    padding: 2%;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    transition: 1s;
+}
+
+#key:focus, #value:focus {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #fff inset;
+    transition: 1s;
+}
+
+span {
+    color: #fff;
+    font-family: 'Courier New';
+    margin: auto;
+}
+
+#add {
+    width: 70%;
+    padding: 0;
+    border: 0;
+    background-color: #dfa30e;
+    margin-left: 5px;
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #dfa30e;
+    transition: .5s;
+}
+
+.view-array {
+    display: grid;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#reset {
+    border: 0;
+    background-color: #df0e39;
+    padding: 3%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px #df0e39;
+    transition: .5s;
+}
+
+#result {
+    text-align: center;
+    background-color: #4a6ba3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 3%;
+    outline: none;
+    color: #000;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #4a6ba3;
+}
+
+button {
+    font-weight: bold;
+}
+
+#add:hover, #show:hover {
+    background-color: #ac7f0f;
+    transition: .5s;
+}
+
+#reset:hover {
+    background-color: #b81435;
+    transition: .5s;
+}
+
+.error {
+    border: 2px solid rgb(243, 54, 54);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(243, 54, 54) inset;
+}
+
+
+@media only screen and (max-width: 430px) {
+    .container {
+        width: 70%;
+    }
+    
+    .add-obj {
+        display: grid;
+        box-sizing: content-box;
+        margin: 20% 0;
+    }
+    span{
+        margin-top: 5%;
+    }
+
+    #add {
+        margin: auto;
+        margin-top: 10%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 50%;
+    }
+}

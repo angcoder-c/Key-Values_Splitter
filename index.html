@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Key-Value Splitter</title>
 </head>
 <body>
@@ -12,12 +13,16 @@
         </div>
         <div class="add-obj">
             <input type="text" id="key" required>
+            <span>:</span>
             <input type="text" id="value" required>
             <button id="add">Agregar</button>
         </div>
-        <code id="result">---</code>
-        <button id="reset">Restablecer</button>
+        <div class="view-array">
+            <code id="result">---</code>
+            <button id="reset">Restablecer</button>
+        </div>
     </div>
+
     <script src="./scripts/core/main.js"></script>
     <script src="./scripts/web/index.js"></script>
 </body>
