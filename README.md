@@ -1,10 +1,10 @@
 # Key-Values Splitter
-A function that receives an input dictionary and returns a nested array of keys and values.
+A function that receives an input dictionary and displays a nested array of keys and values.
 ![web](https://user-images.githubusercontent.com/58778570/179086273-2a0ec4cf-f0d1-4be8-aca7-9182d28b3ee8.gif)
 ![terminal](https://user-images.githubusercontent.com/58778570/179098078-0382bd47-665a-4fae-9fb5-64b1da2c5326.gif)
 
 ## Requirements ⚙️
-> Note: This app can be run in a terminal with node.js installed or in a web browser (node.js installed is not required).
+> Note: This app can be run in an installed terminal with node.js or in a web browser (node.js installed is not required).
 
 - Node.js
 
