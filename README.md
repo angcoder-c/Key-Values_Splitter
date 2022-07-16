@@ -23,9 +23,9 @@ git clone https://github.com/Angel-Gabriel-Chavez/Key-Values_Splitter.git
 ---
 
 - Run the `tester.js` file, followed by the word `show`. Then you can choose between two options:
+![terminal](https://user-images.githubusercontent.com/58778570/179098099-093b0ae5-7bb7-466b-8fd8-28e6efb70765.gif)
 
 1. Show a list of preset tests:
-![terminal](https://user-images.githubusercontent.com/58778570/179098099-093b0ae5-7bb7-466b-8fd8-28e6efb70765.gif)
 
 ```bash
 node tester.js show tests
