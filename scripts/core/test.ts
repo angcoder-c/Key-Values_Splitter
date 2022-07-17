@@ -1,5 +1,6 @@
 import { keysAndValue } from "./main";
 
+// test arrays
 var arr1 = {a:1, b:2, c:3};
 var arr2 = {a:'Apple', b:'Microsoft', c:'Google'};
 var arr3 = {key1:true, key2:false, key3:undefined};
@@ -36,6 +37,7 @@ const tests = {
 }; 
 
 function showTests() {
+    // pint tests int terminal: show tests
     for (let i=0; i < Object.keys(tests).length; i++) {
         var printTest = `
         ---------------------------------------------

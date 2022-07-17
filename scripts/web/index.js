@@ -10,6 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
     var objOrigin = {};
 
     function addItem () {
+        /*
+         * if the text fields have any values, 
+         * insert them into the object, clear the fields 
+         * and display the object. 
+        */
         var key = keyField.value; 
         var value = valueField.value; 
 
@@ -29,12 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function show () {
+        // display result
         if (Object.keys(objOrigin).length > 0){
             result.innerText = JSON.stringify(keysAndValue(objOrigin));
         } else {}
     }
 
     function reset () {
+        // reset the values ​​of all text fields
         keyField.value = ''; 
         valueField.value = '';
         source.innerText = ''; 

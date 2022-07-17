@@ -2,6 +2,7 @@
 exports.__esModule = true;
 exports.showTests = void 0;
 var main_1 = require("./main");
+// test arrays
 var arr1 = { a: 1, b: 2, c: 3 };
 var arr2 = { a: 'Apple', b: 'Microsoft', c: 'Google' };
 var arr3 = { key1: true, key2: false, key3: undefined };
@@ -31,6 +32,7 @@ var tests = {
     ]
 };
 function showTests() {
+    // pint tests int terminal: show tests
     for (var i = 0; i < Object.keys(tests).length; i++) {
         var printTest = "\n        ---------------------------------------------\n        Test ".concat(i + 1, "\n        ---------------------------------------------\n        Object origin: ").concat(JSON.stringify(tests[i][0]), "\n        Array result: ").concat(JSON.stringify(tests[i][1]), "\n        ---------------------------------------------");
         console.log(printTest);
