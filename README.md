@@ -14,7 +14,7 @@ Or
 
 ## Clone the repository
 ```bash
-git clone https://github.com/Angel-Gabriel-Chavez/Key-Values_Splitter.git
+git clone https://github.com/angcoder-c/Key-Values_Splitter.git
 ```
 ## Run 🏁
 - Open Html file `index.html` in the browser
